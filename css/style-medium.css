@@ -1,0 +1,23 @@
+/* Between 601 and 800px */
+.header .logo {
+    width: 30%;
+    text-align: left;
+}
+.header .logo img {
+   max-width: 100px;
+}
+.header .head-info {
+    width: 70%;
+    text-align: right;
+}
+/* portfolio figures */
+.portfolio-items figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1px;
+	width: 48%;
+	height: auto;
+	text-align: left;
+	cursor: pointer;
+}

@@ -1,0 +1,17 @@
+/* More than 800px */
+.container{
+    width: 800px;
+    margin: auto;
+    padding: auto;
+}
+/* figures */
+.portfolio-items figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1px;
+	width: 32.3%;
+	height: auto;
+	text-align: left;
+	cursor: pointer;
+}

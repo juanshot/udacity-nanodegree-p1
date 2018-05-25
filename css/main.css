@@ -1,0 +1,227 @@
+body, html {
+    font-family: "Courier New", Courier, monospace;
+    color: #2d3c49;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #2d3c49;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Header Section */
+.header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.header .head-info {
+    line-height: 0.1em;
+}
+
+.header .head-info h3 {
+    font-size: 2em;
+    font-weight: normal;
+}
+
+divider {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;
+    background-color: #7d97ad;
+    height: 5px;
+    margin: 0px 15px 0px 15px;
+}
+/* Profile Pic Section */
+.image-wrapper {
+    width: 100%;
+    margin: 15px;
+    text-align: center;
+    background-image: url(../img/wall_image.png);
+    min-height: 367px;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+.image-profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 40px;
+    object-fit: cover;
+    object-position: center right;
+    -webkit-box-shadow: 0px 3px 14px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 14px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 14px -1px rgba(0,0,0,0.75);
+}
+/* Social Icons */
+.social {
+    font-size: 1.8em;
+}
+
+.social a {
+    color: white;
+}
+
+.social .facebook-class:hover {
+    color: #4267b2;
+}
+
+.social .linkedin-class:hover {
+    color: #02b3e4;
+}
+
+.social .github-class:hover {
+    color: #000;
+}
+/* Portfolio Section */
+.portfolio {
+    margin: 15px;
+    width: 100%;
+}
+
+.portfolio h4 {
+   font-weight: normal;
+   font-size: 1.3em;
+}
+
+.portfolio .portfolio-items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+	list-style: none;
+	text-align: center;
+}
+.portfolio .portfolio-items figure {
+    padding: 2px;
+}
+
+.portfolio-items figure img {
+	position: relative;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.portfolio-items figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.portfolio-items figure figcaption::before,
+.portfolio-items figure figcaption::after {
+	pointer-events: none;
+}
+
+.portfolio-items figure figcaption,
+.portfolio-items figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.portfolio-items figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.portfolio-items figure h2,
+.portfolio-items figure p {
+	margin: 0;
+}
+
+.portfolio-items figure p {
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 1px;
+	font-size: 0.8em;
+}
+/* Effects */
+.fade-in {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+figure.effect img {
+	opacity: 0.95;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	content: "";
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+figure.effect p {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 7em;
+	padding: 0 1em;
+	max-width: 150px;
+	border-right: 4px solid #fff;
+	text-align: right;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect h2 {
+	text-align: left;
+}
+
+figure.effect:hover img {
+	opacity: 0.6;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.effect:hover figcaption::before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+figure.effect:hover p {
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}

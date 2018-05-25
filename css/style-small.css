@@ -1,0 +1,41 @@
+/* Less than 600px Screens */
+.header .logo {
+    width: 100%;
+    text-align: center;
+}
+.header .logo img {
+    max-width: 100px;
+}
+.header .head-info {
+    width: 100%;
+    text-align: center;
+}
+.header .head-info h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+#portfolio h4 {
+    font-weight: normal;
+    font-size: 1em;
+ }
+ #portfolio .portfolio-items .item {
+    width: 100%;
+}
+/* portfolio */
+.portfolio-items figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	cursor: pointer;
+}
+/* Image background changes */
+.image-wrapper {
+    width: 100%;
+    margin: 15px;
+    text-align: center;
+    background-image: url(../img/wall_image_small.png);
+}
