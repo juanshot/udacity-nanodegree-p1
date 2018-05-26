@@ -33,7 +33,7 @@ a {
     font-weight: normal;
 }
 
-divider {
+.divider {
     border: 0;
     clear:both;
     display:block;
